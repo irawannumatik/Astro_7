@@ -5,8 +5,9 @@ import QuizNavigation from "@/components/QuizNavigation";
 import { useAudio } from "@/hooks/useAudio";
 import { lingkaranQuizQuestions } from "@/data/lingkaranQuizData";
 import { spaceBg } from "@/assets/placeholder";
-import spaceshipImg from "@/assets/pesawat.png";
-import meteorImg from "@/assets/meteor.png";
+
+const spaceshipImg = "/pesawat.png";
+const meteorImg = "/meteor.png";
 
 interface MeteorState {
   id: number;

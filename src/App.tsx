@@ -25,6 +25,9 @@ import TKAPage from "./pages/TKAPage";
 import PerbandinganMenuPage from "./pages/PerbandinganMenuPage";
 import PerbandinganUmumPage from "./pages/PerbandinganUmumPage";
 import AljabarMateriPage from "./pages/AljabarMateriPage";
+import BilanganBulatMenuPage from "./pages/BilanganBulatMenuPage";
+import BilanganRasionalMenuPage from "./pages/BilanganRasionalMenuPage";
+import AljabarMenuPage from "./pages/AljabarMenuPage";
 import PapanPeringkatPage from "./pages/PapanPeringkatPage";
 import BankSoalPage from "./pages/BankSoalPage";
 import ChatAIPage from "./pages/ChatAIPage";
@@ -50,6 +53,9 @@ const AppInner = () => {
       <Route path="/menu" element={<MenuPage />} />
       <Route path="/petunjuk" element={<PetunjukPage />} />
       <Route path="/materi" element={<MateriPage />} />
+      <Route path="/materi/bilangan-bulat" element={<BilanganBulatMenuPage />} />
+      <Route path="/materi/bilangan-rasional" element={<BilanganRasionalMenuPage />} />
+      <Route path="/materi/aljabar-menu" element={<AljabarMenuPage />} />
       <Route path="/materi/kubus" element={<KubusPage />} />
       <Route path="/materi/lingkaran" element={<LingkaranMateriPage />} />
       <Route path="/materi/perbandingan" element={<PerbandinganMenuPage />} />

@@ -99,20 +99,24 @@ const MateriPage = () => {
                   style={{ animationDelay: `${i * 0.05}s` }}
                   onClick={() => {
                     playPopSound();
-                    if (topik === "BANGUN RUANG SISI DATAR") {
+                    if (topik === "BILANGAN BULAT") {
+                      navigate("/materi/bilangan-bulat");
+                    } else if (topik === "BILANGAN RASIONAL") {
+                      navigate("/materi/bilangan-rasional");
+                    } else if (topik === "ALJABAR") {
+                      navigate("/materi/aljabar-menu");
+                    } else if (topik === "PERBANDINGAN") {
+                      navigate("/materi/perbandingan");
+                    } else if (topik === "BANGUN RUANG SISI DATAR") {
                       navigate("/materi/kubus");
                     } else if (topik === "LINGKARAN") {
                       navigate("/materi/lingkaran");
-                    } else if (topik === "PERBANDINGAN") {
-                      navigate("/materi/perbandingan");
-                    } else if (topik === "ALJABAR") {
-                      navigate("/materi/aljabar");
                     }
                   }}
                 >
                   <Presentation className="w-5 h-5 text-primary shrink-0 group-hover:scale-110 transition-transform" />
                   <span className="font-body text-sm text-white">{topik}</span>
-                  {(topik === "BANGUN RUANG SISI DATAR" || topik === "LINGKARAN" || topik === "PERBANDINGAN" || topik === "ALJABAR") && (
+                  {(topik === "BILANGAN BULAT" || topik === "BILANGAN RASIONAL" || topik === "ALJABAR" || topik === "PERBANDINGAN" || topik === "BANGUN RUANG SISI DATAR" || topik === "LINGKARAN") && (
                     <span className="ml-auto text-xs text-accent font-display">📖 BUKA</span>
                   )}
                 </button>
